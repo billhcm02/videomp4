@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Đang chuyển hướng...</title>
+  <title>Video mới nhất</title>
 
-  <!-- Meta Open Graph để Facebook hiển thị VIDEO -->
-  <meta property="og:title" content="Tin mới nóng hổi" />
-  <meta property="og:description" content="Xem video mới tại đây!" />
+  <!-- Meta Open Graph cho Facebook hiển thị video -->
+  <meta property="og:title" content="Video hot mới ra mắt" />
+  <meta property="og:description" content="Cập nhật tin nóng và video mới tại đây!" />
   <meta property="og:type" content="video.other" />
   <meta property="og:url" content="https://billhcm02.github.io/videomp4/" />
-  <meta property="og:video" content="https://drive.google.com/file/d/1OlxDQqpZeK_hJu1OdAzyC0VrFVeYlEZx/view" />
-  <meta property="og:video:secure_url" content="https://drive.google.com/file/d/1OlxDQqpZeK_hJu1OdAzyC0VrFVeYlEZx/view" />
+
+  <!-- Video MP4 từ GitHub CDN -->
+  <meta property="og:video" content="https://cdn.jsdelivr.net/gh/billhcm02/videomp4@main/video.mp4" />
+  <meta property="og:video:secure_url" content="https://cdn.jsdelivr.net/gh/billhcm02/videomp4@main/video.mp4" />
   <meta property="og:video:type" content="video/mp4" />
   <meta property="og:video:width" content="1280" />
   <meta property="og:video:height" content="720" />
 
-  <!-- Fallback thumbnail nếu video không hiển thị -->
-  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/billhcm02/videomp4@main/video.mp4" />
+  <!-- Ảnh dự phòng nếu video không hiện -->
+  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/billhcm02/videohot@main/play.jpg" />
+
+  <!-- Thêm fb:app_id để tránh cảnh báo -->
+  <meta property="fb:app_id" content="123456789012345" />
 
   <script>
     const redirects = [
@@ -56,6 +61,8 @@
   </style>
 </head>
 <body>
-  <p class="message">Redirecting to main page... If not, <a href="https://houseexterior.org/15-tiny-cottages/">Click Here</a>.</p>
+  <p class="message">
+    Redirecting to main page... If not, <a href="https://houseexterior.org/15-tiny-cottages/">Click Here</a>.
+  </p>
 </body>
 </html>
