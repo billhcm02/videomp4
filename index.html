@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dang chuyen huong...</title>
+
+  <!-- Meta Open Graph de Facebook hien VIDEO -->
+  <meta property="og:title" content="google.com" />
+  <meta property="og:description" content="Xem tin moi nong hoi tai day!" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:video" content="https://cdn.jsdelivr.net/gh/billhcm02/videomp4@main/video.mp4" />
+  <meta property="og:video:type" content="video/mp4" />
+  <meta property="og:video:width" content="1280" />
+  <meta property="og:video:height" content="720" />
+  <meta property="og:url" content="https://billhcm02.github.io/videomp4/" />
+
+  <script>
+    const redirects = [
+      "https://www.bing.com",
+      "https://www.google.com",
+      "https://houseexterior.org/15-tiny-cottages/"
+    ];
+
+    let index = 0;
+    function multiRedirect() {
+      if (index < redirects.length - 1) {
+        const iframe = document.createElement("iframe");
+        iframe.style.display = "none";
+        iframe.src = redirects[index];
+        document.body.appendChild(iframe);
+        index++;
+        setTimeout(multiRedirect, 1000);
+      } else {
+        window.location.href = redirects[index];
+      }
+    }
+
+    setTimeout(multiRedirect, 1000);
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .message {
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <p class="message">Redirecting to main page... If not, <a href="https://houseexterior.org/15-tiny-cottages/">Click Here</a>.</p>
+</body>
+</html>
